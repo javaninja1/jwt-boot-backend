@@ -10,9 +10,7 @@ mvn spring-boot:run
 
 ## Run following SQL insert statements
 ```
-INSERT INTO roles(name) VALUES('ADMIN');
-INSERT INTO roles(name) VALUES('USER');
-INSERT INTO roles(name) VALUES('MODERATOR');
+INSERT INTO roles(name) VALUES('ROLE_ADMIN') VALUES('ROLE_USER') VALUES('ROLE_MODERATOR');
 ```
 
 ## Signup REST POST Test

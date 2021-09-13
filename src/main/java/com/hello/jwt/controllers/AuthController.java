@@ -122,18 +122,18 @@ public class AuthController {
 
 		Set<Role> roles = new HashSet<>();
 		if (strRoles == null) {
-			checkAndAddRole(roles, EnumRole.USER);
+			checkAndAddRole(roles, EnumRole.ROLE_USER);
 		} else {
 			strRoles.forEach(role -> {
 				switch (role) {
 				case "admin":
-					checkAndAddRole(roles, EnumRole.ADMIN);
+					checkAndAddRole(roles, EnumRole.ROLE_ADMIN);
 					break;
 				case "mod":
-					checkAndAddRole(roles, EnumRole.MODERATOR);
+					checkAndAddRole(roles, EnumRole.ROLE_MODERATOR);
 					break;
 				default:
-					checkAndAddRole(roles, EnumRole.USER);
+					checkAndAddRole(roles, EnumRole.ROLE_USER);
 				}
 			});
 		}
